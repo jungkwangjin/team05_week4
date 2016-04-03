@@ -9,33 +9,12 @@
 
   <name>team5</name>
   <url>http://maven.apache.org</url>
-  <build>
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-      </resource>
-      <resource>
-        <directory>src/main/resources-${env}</directory>
-      </resource>
-    </resources>
-    
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-   </plugins>
-   
-  </build>
 
-   <properties>
+  <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.language>java</sonar.language>
   </properties>
-
+  
+  
 
   <dependencies>
     <dependency>
