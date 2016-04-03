@@ -12,11 +12,11 @@ public class Calculator {
 		this.exceedUsage=0;
 		this.type=type;
 	}
-	private double calculation(){
+	public double calculation(){
 		double exceedUsageFee=0;
 		double lineNumberFee=0;
 		double totalFee=0;
-		if(type=="gold"){
+		if(type.equals("Gold")){
 			Plan gold = new GoldPlan();
 			exceedUsage = usage-gold.getBasicMin();
 			if(exceedUsage>0){
@@ -28,7 +28,7 @@ public class Calculator {
 			totalFee=gold.getBasicFee()+exceedUsageFee+lineNumberFee;
 			return totalFee;
 		}
-		if(type=="sliver"){
+		if(type.equals("sliver")){
 			Plan silver = new SilverPlan();
 			exceedUsage = usage-silver.getBasicMin();
 			if(exceedUsage>0){
