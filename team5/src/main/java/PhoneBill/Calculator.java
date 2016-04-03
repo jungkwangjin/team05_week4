@@ -22,7 +22,10 @@ public class Calculator {
 			if(exceedUsage>0){
 				exceedUsageFee=exceedUsage*gold.getExcessFareRate();
 			}
-			if(linenumber>1){
+			if(linenumber>3){
+				lineNumberFee=(linenumber-3)*5+43;
+			}
+			else if(3>=linenumber){
 				lineNumberFee=(linenumber-1)*21.5;
 			}
 			totalFee=gold.getBasicFee()+exceedUsageFee+lineNumberFee;
@@ -34,7 +37,10 @@ public class Calculator {
 			if(exceedUsage>0){
 				exceedUsageFee=exceedUsage*silver.getExcessFareRate();
 			}
-			if(linenumber>1){
+			if(linenumber>3){
+				lineNumberFee=(linenumber-3)*5+29;
+			}
+			else if(3>=linenumber){
 				lineNumberFee=(linenumber-1)*14.5;
 			}
 			totalFee=silver.getBasicFee()+exceedUsageFee+lineNumberFee;
