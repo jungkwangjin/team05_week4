@@ -10,26 +10,6 @@
   <name>team5</name>
   <url>http://maven.apache.org</url>
   
-   <profiles>
-    <profile>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      
-      <id>dev</id>
-      <properties>
-        <env>dev</env>
-      </properties>
-    </profile>
-    
-    <profile>
-      <id>prod</id>
-      <properties>
-        <env>prod</env>
-      </properties>
-    </profile>
-  </profiles>
-  
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,10 +20,7 @@
   
   <resources>
       <resource>
-        <directory>src/main/resources</directory>
-      </resource>
-      <resource>
-        <directory>src/main/resources-${env}</directory>
+        <directory>C:\Users\kim91_000\git\team05_week4\team5\src\main\java\PhoneBill</directory>
       </resource>
     </resources>
   
@@ -73,19 +50,14 @@
   </build>
   
  
-  <dependencies>
+ <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-    	<groupId>org.apache.httpcomponents</groupId>
-    	<artifactId>httpclient</artifactId>
-    	<version>4.5.2</version>
-    </dependency>
-   
   </dependencies>
-
+  
+  
 </project>
