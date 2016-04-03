@@ -7,3 +7,12 @@
 
 입력시 user객채를 생성하여 bill를 실행하고 bill의 print메소드가 calculator를 실행하여 
 입력된 이용등급에 따라 GolbPlan 객체 혹은 SilverPlan 객채를생성하여 각 플렌에 부과되는 금액을 받아와 계산 및 계산값 반환을 통하여 결과값을 출력하게 됩니다.
+
+***************
+Jenkins에서 프로젝트 생성시
+sonar.projectKey=sample
+sonar.projectName=samle
+sonar.projectVersion=0.0.1
+sonar.sources=team5
+값으로 집어넣어주시면 실행됩니다.
+***************
